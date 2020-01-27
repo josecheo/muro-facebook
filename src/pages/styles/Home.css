@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Home {
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Home__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 8px 8px 8px;
+    padding: 10px 10px;
+    width: 35%;
+}
+.Home__container-login{
+   width: 100%;
+}
