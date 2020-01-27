@@ -1,14 +1,19 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import './styles/Login.css'
 class Login extends React.Component{
+
 
 render(){
 
     return (
+   
+      <div>
 
-<div>
-        
-        <form >
+      <h1 className="mb 4"> Inicio de sesion </h1>
+      <div>  
+        <form className="container">
+          <div className ="container-fluid"> 
            <div className="form-group">
             <label>Email</label>
             <input
@@ -22,23 +27,24 @@ render(){
             <input
        
               className="form-control"
-              type="text"
+              type="password"
               name="twitter"
            
             />
           </div>
 
           <Link
-                  className=""
+                  className="btn btn-primary container"
                   to={`/muro`}
                 >
                   Login
                 </Link>
 
-
+                </div>
          
         </form>
-     </div>
+        </div>
+        </div>
 
 
 
