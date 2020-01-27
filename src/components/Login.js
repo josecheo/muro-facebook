@@ -10,8 +10,7 @@ render(){
    
       <div>
 
-      <h1 className="mb 4"> Inicio de sesion </h1>
-      <div>  
+       
         <form className="container">
           <div className ="container-fluid"> 
            <div className="form-group">
@@ -44,7 +43,7 @@ render(){
          
         </form>
         </div>
-        </div>
+      
 
 
 
