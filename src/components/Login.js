@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/Login.css";
+import Logo from "../img/muu.PNG";
 
 class Login extends React.Component {
   render() {
     return (
       <React.Fragment>
         <div className="well login-box center-block">
-          <h2 className="letras">Iniciar sesión</h2>
+          <img className="logo" src={Logo}></img>
           <form name="login">
             <input
               type="text"
@@ -21,7 +22,7 @@ class Login extends React.Component {
             />
             <div>
               <Link className="btn btn-primary" to={`/Muro`}>
-                Long in
+                Iniciar sesión
               </Link>
             </div>
           </form>
