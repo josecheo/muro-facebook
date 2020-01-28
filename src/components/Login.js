@@ -8,7 +8,7 @@ class Login extends React.Component {
     return (
       <React.Fragment>
         <div className="well login-box center-block">
-          <img className="logo" src={Logo}></img>
+          <img className="logo" src={Logo} alt="Logo"></img>
           <form name="login">
             <input
               type="text"
