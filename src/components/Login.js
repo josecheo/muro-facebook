@@ -1,56 +1,41 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
-import './styles/Login.css'
-class Login extends React.Component{
+import "./styles/Login.css";
 
-
-render(){
-
+class Login extends React.Component {
+  render() {
     return (
-   
-      <div>
-
-       
-        <form className="container">
-          <div className ="container-fluid"> 
-           <div className="form-group">
-            <label>Email</label>
+      <React.Fragment>
+        <div className="well login-box center-block">
+          <h2 className="letras">Iniciar sesión</h2>
+          <form name="login">
             <input
-              className="form-control"
               type="text"
-              name="email"
-               />
-          </div>
-            <div className="form-group">
-            <label>Contraseña</label>
-            <input
-       
               className="form-control"
-              type="password"
-              name="twitter"
-           
+              placeholder="Username"
             />
-          </div>
+            <input
+              type="Password"
+              className="form-control"
+              placeholder="Password"
+            />
+            <div>
+              <Link className="btn btn-primary" to={`/Muro`}>
+                Long in
+              </Link>
+            </div>
+          </form>
 
-          <Link
-                  className="btn btn-primary container"
-                  to={`/muro`}
-                >
-                  Login
-                </Link>
+          <p className="olvido-password">
+            <Link to={`/ResetPaswword`}>¿Olvidaste tu contraseña?</Link>
+          </p>
 
-                </div>
-         
-        </form>
+          <span>¿No tienes una cuenta? </span>
+          <Link to={`/Register`}>Regístrate</Link>
         </div>
-      
-
-
-
-
-    )
+      </React.Fragment>
+    );
+  }
 }
 
-
-}
-export default Login
+export default Login;
