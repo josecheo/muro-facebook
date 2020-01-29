@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./styles/Login.css";
+import "./styles/LoginForm.css";
 import Logo from "../img/muu.PNG";
 
-class Login extends React.Component {
+class LoginForm extends React.Component {
   render() {
     return (
       <React.Fragment>
@@ -21,7 +21,7 @@ class Login extends React.Component {
               placeholder="Password"
             />
             <div>
-              <Link className="btn btn-primary" to={`/Muro`}>
+              <Link className="btn btn-primary" to={`/Home`}>
                 Iniciar sesión
               </Link>
             </div>
@@ -39,4 +39,4 @@ class Login extends React.Component {
   }
 }
 
-export default Login;
+export default LoginForm;
