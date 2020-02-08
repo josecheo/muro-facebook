@@ -1,10 +1,13 @@
 import React from "react";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import Post from "../components/Post";
+
 class Home extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Interfaz Principal Facebook</h1>
+      <div className="Container">
+        <Post></Post>
       </div>
     );
   }

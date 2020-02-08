@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 class Login extends React.Component {
   render() {
     return (
-      <div className="Home">
+      <div className="Container">
         <LoginForm />
       </div>
     );

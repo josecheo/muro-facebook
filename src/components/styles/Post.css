@@ -1,0 +1,27 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.Post {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 33px 71px 37px 49px 52px 52px 38px;
+  width: 500px;
+  height: 350px;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.Post__card-header {
+  padding: 0.4rem 1.25rem;
+  margin-bottom: 0;
+  max-height: 40px;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+.Post__avatar {
+}
