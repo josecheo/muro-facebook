@@ -5,23 +5,93 @@
 
 .Post {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 33px 71px 37px 49px 52px 52px 38px;
+  grid-template-columns: 70px repeat(3, 1fr) 20px;
+  grid-template-rows: 33px 71px 37px 49px;
   width: 500px;
-  height: 350px;
+  height: 250px;
   border-radius: 3px 3px 3px 3px;
   box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
-
 .Post__card-header {
+  grid-column: 1/6;
   padding: 0.4rem 1.25rem;
   margin-bottom: 0;
   max-height: 40px;
   font-weight: 600;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-  grid-column-start: 1;
-  grid-column-end: 6;
 }
+
 .Post__avatar {
+  border-radius: 50%;
+  grid-row: 2/4;
+  margin-top: 0.2rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 60px;
+  height: 60px;
+  justify-self: center;
+}
+
+.Post_textarea {
+  grid-column: 2/6;
+  grid-row: 2/4;
+  align-self: center;
+  resize: none;
+  padding: 0.5rem;
+  width: 400px;
+  font-size: 28px;
+  font-weight: 600;
+  justify-self: stretch;
+  border: none;
+}
+
+.Post__buttons--container {
+  display: flex;
+
+  grid-column: 1/6;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  align-items: center;
+  justify-content: space-around;
+}
+.upload_photo--container {
+  display: flex;
+  background-color: #f5f6f7;
+  border-radius: 18px;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 138px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  color: #777777;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+.upload_photo--container:hover {
+  background-color: #eeeeee;
+}
+
+.upload_photo--container img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.button {
+  grid-column: 1/6;
+  width: 96%;
+  background: #4267b2;
+  align-self: center;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  justify-self: center;
+  cursor: pointer;
+  border-radius: 18px;
+  height: 30px;
+}
+.button:hover {
+  background: #1d3f83;
 }
