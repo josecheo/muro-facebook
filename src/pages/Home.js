@@ -1,14 +1,19 @@
 import React from "react";
 
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import Post from "../components/Post";
+import "./styles/Home.css";
+import Publication from "../components/Publication";
 
 class Home extends React.Component {
   render() {
     return (
-      <div className="Container">
+      <section className="Hero">
+       <div className="Home__container">
         <Post></Post>
-      </div>
+        <Publication></Publication>
+        </div>
+        </section>
     );
   }
 }

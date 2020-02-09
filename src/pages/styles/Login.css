@@ -3,12 +3,13 @@
   padding: 0;
 }
 
-.Container {
+.Login_container {
   display: flex;
   width: 100%;
   min-height: calc(100vh - 60px);
   align-items: center;
   justify-content: center;
+  background-color: #e9ebee;
 }
 
 /* .Home__container{

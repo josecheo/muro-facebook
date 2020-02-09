@@ -1,6 +1,4 @@
 import React from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faXing } from "@fortawesome/free-brands-svg-icons";
 import "./styles/Post.css";
 import avatar from "../img/avatar.png";
 import galeria from "../img/galeria.svg";

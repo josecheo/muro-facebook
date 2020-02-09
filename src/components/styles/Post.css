@@ -4,13 +4,15 @@
 }
 
 .Post {
+  margin-top: 20px;
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: 70px repeat(3, 1fr) 20px;
   grid-template-rows: 33px 71px 37px 49px;
   width: 500px;
   height: 250px;
-  border-radius: 3px 3px 3px 3px;
-  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
+  border: 1px solid #dddfe2;
 }
 .Post__card-header {
   grid-column: 1/6;
@@ -48,7 +50,6 @@
 
 .Post__buttons--container {
   display: flex;
-
   grid-column: 1/6;
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
@@ -57,7 +58,7 @@
 }
 .upload_photo--container {
   display: flex;
-  background-color: #f5f6f7;
+  background-color: #ffffff;
   border-radius: 18px;
   cursor: pointer;
   box-sizing: border-box;
@@ -70,7 +71,7 @@
   box-sizing: border-box;
 }
 .upload_photo--container:hover {
-  background-color: #eeeeee;
+  background-color: #f1f1f1;
 }
 
 .upload_photo--container img {
@@ -84,7 +85,7 @@
   width: 96%;
   background: #4267b2;
   align-self: center;
-  color: white;
+  color: #ffffff;
   font-size: 16px;
   text-align: center;
   justify-self: center;
